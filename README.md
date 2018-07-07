@@ -36,7 +36,7 @@ pip install --upgrade genpac
 ```
 genpac --pac-proxy "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:1080" --gfwlist-url=https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt --output="autoproxy.pac"
 ```
-* 设置q全局代理
+* 设置全局代理(firefox浏览器不知道为什么不能使用全局代理，需要下载插件)
 >点击：System settings > Network > Network Proxy，选择 Method 为 Automatic，设置 Configuration URL 为 autoproxy.pac 文件的路径，点击 Apply System Wide。
 格式如：file:///home/{user}/autoproxy.pac
 
@@ -122,6 +122,21 @@ Albert : albert
 ### 2、更改【显示桌面快捷键为】super+D （默认为ctrl+super+t）
 >先打开【设置-外观-行为】勾选[添加"显示桌面“图标到启动器]<br>
 然后打开【设置-键盘-导航】更改隐藏所有窗口快捷键
+### 3、默认的双指滚动方式与windows相反 [链接](https://blog.csdn.net/LanderlYoung/article/details/18313911)
+>打开【设置-鼠标和触摸板】最下面，勾选[自然是滚动]<br>
+>或者使用下面的两个命令行语句，数字绝对值越小越灵敏.(如果b报错则需要安装第三行的驱动)
+```
+synclient VertScrollDelta=-103
+synclient HorizScrollDelta=-103
+#sudo apt-get install xserver-xorg-input-synaptics
+```
 
+---
+
+## 六、anaconda设置
+### 1、直接到官网下载，速度不慢，然后安装
+### 2、如果在终端找不到anaconda的命令，则按照下面进行设置
+>加入：export PATH="/Users/yizhen/anaconda/bin（自己安装anaconda的位置）:$PATH"<br>
+然后执行source ~/.zshrc即可。
 
 
