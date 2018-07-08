@@ -10,7 +10,7 @@ git clone git@github.com:zeal-github/ubuntu-setting.git
 >* ### [三、美化](#title3)
 >* ### [四、设置以上软件的开机启动](#title4)
 >* ### [五、其他系统设置](#title5)
->* ### [六、anaconda设置](#title6)
+>* ### [六、anaconda设置](#titlesix)
 
 ## <span id="1">一、shadowsocks-qt5安装以及全局pac的配置</span>
 原文链接：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)<br>
@@ -169,7 +169,7 @@ synclient HorizScrollDelta=-103
 
 ---
 
-## <span id ="title6">六、anaconda设置</span>
+## <span id ="titlesix">六、anaconda设置</span>
 ### 1、直接到官网下载，速度不慢，然后安装
 ### 2、如果在终端找不到anaconda的命令，则按照下面进行设置
 >加入：export PATH="/Users/yizhen/anaconda/bin（自己安装anaconda的位置）:$PATH"<br>
