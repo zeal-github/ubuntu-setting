@@ -6,11 +6,11 @@ sudo apt-get install git
 git clone git@github.com:zeal-github/ubuntu-setting.git
 ```
 >* ### [一、shadowsocks-qt5安装以及全局pac的配置](#一、shadowsocks-qt5安装以及全局pac的配置) 
->* ### [二、安装各种必要软件](#二、安装各种必要软件)
->* ### [三、美化](#三、美化)
->* ### [四、设置以上软件的开机启动](#四、设置以上软件的开机启动)
->* ### [五、其他系统设置](#五、其他系统设置)
->* ### [六、anaconda设置](#六、anaconda设置)
+>* ### [二、安装各种必要软件](#title2)
+>* ### [三、美化](#title3)
+>* ### [四、设置以上软件的开机启动](#title4)
+>* ### [五、其他系统设置](#title5)
+>* ### [六、anaconda设置](#title6)
 
 ## <span id="1">一、shadowsocks-qt5安装以及全局pac的配置</span>
 原文链接：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)<br>
@@ -49,7 +49,7 @@ genpac --pac-proxy "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:108
 
 -----
 
-## <span id="2">二、安装各种必要软件</span>
+## <span id="title2">二、安装各种必要软件 </span>
 ### 1、chrome浏览器
 >直接使用项目里的安装文件，或者当开启代理并且可以正常使用的时候可以直接从官网下载
 
@@ -72,7 +72,7 @@ sudo apt install albert
 ### 5、安装有道词典
 >直接在网上搜索即可，有linux版本
 ---
-## <span id="3">三、美化</span>
+## <span id="title3">三、美化</span>
 
 原文链接：[不美翻怎么开发!Ubuntu 16.04 LTS深度美化!(2017年度定稿版)](https://www.jianshu.com/p/4bd2d9b1af41)
 
@@ -146,14 +146,14 @@ sudo apt install conky-manager
 
 ---
 
-## <span id = "4" >四、设置以上软件的开机启动</span>
+## <span id = "title4" >四、设置以上软件的开机启动</span>
 >在搜索栏搜索 `gnome-session`/`启动应用程序` 在里面添加启动项<br>
 url地址为/usr/bin/<br>
 shdowsocks-qt5 : `ss-qt5`<br>
 Albert : albert
 
 ---
-## <span id = "5">五、其他系统设置</span>
+## <span id = "title5">五、其他系统设置</span>
 ### 1、更改桌面壁纸
 ### 2、更改【显示桌面快捷键为】super+D （默认为ctrl+super+t）
 >先打开【设置-外观-行为】勾选[添加"显示桌面“图标到启动器]<br>
@@ -169,7 +169,7 @@ synclient HorizScrollDelta=-103
 
 ---
 
-## <span id ="6">六、anaconda设置</span>
+## <span id ="title6">六、anaconda设置</span>
 ### 1、直接到官网下载，速度不慢，然后安装
 ### 2、如果在终端找不到anaconda的命令，则按照下面进行设置
 >加入：export PATH="/Users/yizhen/anaconda/bin（自己安装anaconda的位置）:$PATH"<br>
