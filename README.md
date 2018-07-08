@@ -134,7 +134,9 @@ sudo apt-add-repository -y ppa:teejee2008/ppa
 sudo apt update
 sudo apt install conky-manager
 ```
->不过这个插件好像不太稳定，用显示桌面快捷键之后就消失了，正在测试
+>安装这个manager之后，需要进入里面的插件，然后点击编辑文件，<br>
+把 `own_window_type = normal` 改为`own_window_type = override`<br>
+不然的话一按显示桌面所有的插件就会消失
 
 >移除ppa源可以使用下面命令
 >>```
