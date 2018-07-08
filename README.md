@@ -1,7 +1,5 @@
 # 这篇文档是用来当重装ubuntu时进行的一些配置
 
->[锚点测试](#test)
-
 先使用git下载本仓库
 ```
 sudo apt-get install git
@@ -168,7 +166,7 @@ synclient VertScrollDelta=-103
 synclient HorizScrollDelta=-103
 #sudo apt-get install xserver-xorg-input-synaptics
 ```
-<a id="test"></a>这是一个锚点测试
+
 ---
 
 ## 六、anaconda设置
