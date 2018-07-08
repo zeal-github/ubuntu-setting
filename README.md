@@ -5,12 +5,12 @@
 sudo apt-get install git
 git clone git@github.com:zeal-github/ubuntu-setting.git
 ```
->* ### [一、shadowsocks-qt5安装以及全局pac的配置](#1) 
->* ### [二、安装各种必要软件](#2)
->* ### [三、美化](#3)
->* ### [四、设置以上软件的开机启动](#4)
->* ### [五、其他系统设置](#5)
->* ### [六、anaconda设置](#6)
+>* ### [一、shadowsocks-qt5安装以及全局pac的配置](#一、shadowsocks-qt5安装以及全局pac的配置) 
+>* ### [二、安装各种必要软件](#二、安装各种必要软件)
+>* ### [三、美化](#三、美化)
+>* ### [四、设置以上软件的开机启动](#四、设置以上软件的开机启动)
+>* ### [五、其他系统设置](#五、其他系统设置)
+>* ### [六、anaconda设置](#六、anaconda设置)
 
 ## <span id="1">一、shadowsocks-qt5安装以及全局pac的配置</span>
 原文链接：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)<br>
@@ -135,7 +135,7 @@ sudo apt update
 sudo apt install conky-manager
 ```
 >安装这个manager之后，需要进入里面的插件，然后点击编辑文件，<br>
-把 `own_window_type = normal` 改为`own_window_type = override`<br>
+把 `own_window_type = normal` 改为`own_window_type = desktop`<br>
 不然的话一按显示桌面所有的插件就会消失
 
 >移除ppa源可以使用下面命令
