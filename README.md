@@ -68,6 +68,9 @@ sudo apt install albert
 ### 4、安装vscode
 >可以直接在ubuntu软件应用中安装<br>
 如果在vscode的终端无法显示下划线，那么在设置里将【终端字号】改为13
+
+### 5、安装有道词典
+>直接在网上搜索即可，有linux版本
 ---
 ## <span id="3">三、美化</span>
 
@@ -80,11 +83,19 @@ sudo apt-get update
 sudo apt-get install flatabulous-theme
 ```
 
-### 2、图标（圆形）--numix-icon-theme-circle
+### 2、图标
+>图标的下载完unity-tweak-tool之后可以在里面直接选，不好看再换下面两个
+1.  圆形图标--icon-theme-circle
 ```
 sudo add-apt-repository ppa:numix/ppa
 sudo apt-get update
 sudo apt-get install numix-gtk-theme numix-icon-theme-circle
+```
+2. （配合扁平化主题）--ultra-flat-icons
+```
+sudo add-apt-repository ppa:noobslab/icons
+sudo apt-get update
+sudo apt-get install ultra-flat-icons
 ```
 
 ### 3、指针和字体
@@ -113,7 +124,23 @@ chsh -s /bin/zsh
 ```
 sudo apt-get install docky
 ```
->安装后要启动才能生效，如果要固定其他图标到dock栏，可以打来新窗口然后在dock上右键-固定到dock，或者生成快捷链接到桌面然后拖拽到dock
+>安装后要启动才能生效，如果要固定其他图标到dock栏，可以打来新窗口然后在dock上右键-固定到dock，或者生成快捷链接到桌面然后拖拽到dock<br>
+docky 带有一些dock栏插件，比如Gmail，天气等
+
+### 7、桌面插件-- conky-manager
+```
+sudo apt install conky-all
+sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo apt update
+sudo apt install conky-manager
+```
+>不过这个插件好像不太稳定，用显示桌面快捷键之后就消失了，正在测试
+
+>移除ppa源可以使用下面命令
+>>```
+>>sudo apt-get install ppa-purge 
+>>sudo ppa-purge ppa:teejee2008/ppa
+
 
 ---
 
