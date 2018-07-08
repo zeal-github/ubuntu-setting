@@ -169,7 +169,7 @@ synclient HorizScrollDelta=-103
 
 ---
 
-## <span id ="titlesix">六、anaconda设置</span>
+## <span id ="titlesix"></span>六、anaconda设置
 ### 1、直接到官网下载，速度不慢，然后安装
 ### 2、如果在终端找不到anaconda的命令，则按照下面进行设置
 >加入：export PATH="/Users/yizhen/anaconda/bin（自己安装anaconda的位置）:$PATH"<br>
