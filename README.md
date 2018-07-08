@@ -10,7 +10,7 @@ git clone git@github.com:zeal-github/ubuntu-setting.git
 >* ### [三、美化](#title3)
 >* ### [四、设置以上软件的开机启动](#title4)
 >* ### [五、其他系统设置](#title5)
-[anaconda](#titlesix)
+>* ### [六、anaconda设置](#六anaconda设置)
 
 ## <span id="1">一、shadowsocks-qt5安装以及全局pac的配置</span>
 原文链接：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)<br>
