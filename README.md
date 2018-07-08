@@ -1,5 +1,7 @@
 # 这篇文档是用来当重装ubuntu时进行的一些配置
 
+>[锚点测试](#test)
+
 先使用git下载本仓库
 ```
 sudo apt-get install git
@@ -10,7 +12,7 @@ git clone git@github.com:zeal-github/ubuntu-setting.git
 >* <font size=4> [三、美化](#三美化)</font>
 >* <font size=4> [四、设置以上软件的开机启动](#四设置以上软件的开机启动)</font>
 >* <font size=4>[五、其他系统设置](#五其他系统设置)</font>
->* <font size=4>[六、anaconda设置](#titlesix)</font>
+>* <font size=4>[六、anaconda设置](#六anaconda设置)</font>
 
 ## 一、shadowsocks-qt5安装以及全局pac的配置
 原文链接：[Ubuntu 16安装shadowsocks-qt5并使用PAC全局代理](https://www.litcc.com/2016/12/29/Ubuntu16-shadowsocks-pac/index.html)<br>
@@ -72,7 +74,7 @@ sudo apt install albert
 ### 5、安装有道词典
 >直接在网上搜索即可，有linux版本
 ---
-## <span id="title3">三、美化</span>
+## 三、美化
 
 原文链接：[不美翻怎么开发!Ubuntu 16.04 LTS深度美化!(2017年度定稿版)](https://www.jianshu.com/p/4bd2d9b1af41)
 
@@ -146,14 +148,14 @@ sudo apt install conky-manager
 
 ---
 
-## <span id = "title4" >四、设置以上软件的开机启动</span>
+## 四、设置以上软件的开机启动
 >在搜索栏搜索 `gnome-session`/`启动应用程序` 在里面添加启动项<br>
 url地址为/usr/bin/<br>
 shdowsocks-qt5 : `ss-qt5`<br>
 Albert : albert
 
 ---
-## <span id = "title5">五、其他系统设置</span>
+## 五、其他系统设置
 ### 1、更改桌面壁纸
 ### 2、更改【显示桌面快捷键为】super+D （默认为ctrl+super+t）
 >先打开【设置-外观-行为】勾选[添加"显示桌面“图标到启动器]<br>
@@ -166,10 +168,10 @@ synclient VertScrollDelta=-103
 synclient HorizScrollDelta=-103
 #sudo apt-get install xserver-xorg-input-synaptics
 ```
-
+<span id="test"></span>这是一个锚点测试
 ---
 
-## <span id ="titlesix"></span>六、anaconda设置
+## 六、anaconda设置
 ### 1、直接到官网下载，速度不慢，然后安装
 ### 2、如果在终端找不到anaconda的命令，则按照下面进行设置
 >加入：export PATH="/Users/yizhen/anaconda/bin（自己安装anaconda的位置）:$PATH"<br>
