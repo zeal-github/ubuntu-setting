@@ -168,7 +168,7 @@ synclient VertScrollDelta=-103
 synclient HorizScrollDelta=-103
 #sudo apt-get install xserver-xorg-input-synaptics
 ```
-<span id="test"></span>这是一个锚点测试
+<a id="test"></a>这是一个锚点测试
 ---
 
 ## 六、anaconda设置
