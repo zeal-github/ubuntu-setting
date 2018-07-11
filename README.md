@@ -71,6 +71,17 @@ sudo apt install albert
 
 ### 5、安装有道词典
 >直接在网上搜索即可，有linux版本
+
+### 6、可以查看cpu温度的插件（命令行）
+```
+apt-get install lm-sensors
+sensors-detect
+service kmod start
+sensors #查看的命令
+```
+
+### 7、foxit阅读器
+>官网下载地址 https://www.foxitsoftware.cn/downloads/
 ---
 ## 三、美化
 
