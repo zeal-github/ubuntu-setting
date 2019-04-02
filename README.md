@@ -92,7 +92,8 @@ https://github.com/Jactor-Sue/Deepin-Apps-Installation
 ---
 ## 三、美化
 
-原文链接：[不美翻怎么开发!Ubuntu 16.04 LTS深度美化!(2017年度定稿版)](https://www.jianshu.com/p/4bd2d9b1af41)
+原文链接：[不美翻怎么开发!Ubuntu 16.04 LTS深度美化!(2017年度定稿版)](https://www.jianshu.com/p/4bd2d9b1af41)<br>
+使用gnome桌面系统后，可以大量依赖各种拓展。而tweak-tool里则可以管理各种主体和图标[gnome美化](https://www.cnblogs.com/youxia/p/LinuxDesktop003.html)
 > `注意`：要先把桌面系统切换为`gnome`。（先注销然后选择桌面系统再登录）<br>
 > 1.习惯风格：圆形图标+黑色系<br>
 > 2.主体、图标、指针等都可以在`gnome-tweak-tool`中设置
