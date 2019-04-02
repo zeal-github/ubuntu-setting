@@ -50,13 +50,14 @@ genpac --pac-proxy "SOCKS5 127.0.0.1:1080" --gfwlist-proxy="SOCKS5 127.0.0.1:108
 -----
 
 ## 二、安装各种必要软件 
+
+> 尽量直接在网上搜索deb安装包，否则在`ubuntu软件商店`下载的和第三方下载的可能会重复<br>
+> 直接双击`deb`安装包会在`ubuntu软件商店`检测到，而在命令行中使用`dpkg -i <package name>`则在软件商店中不会显示
+
 ### 1、chrome浏览器
 >直接使用项目里的安装文件，或者当开启代理并且可以正常使用的时候可以直接从官网下载
 
 ### 2、安装sougou拼音输入法
->直接使用项目里的安装文件，或者直接搜索 `搜狗linux`<br>
-设置黑色皮肤，候选词个数为`8个`<br>
-输入法安装后需要重启才能生效
 
 ### 3、安装Albert
 ```
@@ -82,20 +83,28 @@ sensors #查看的命令
 
 ### 7、foxit阅读器
 >官网下载地址 https://www.foxitsoftware.cn/downloads/
+
+### 8、Deepin-wine
+```
+https://github.com/Jactor-Sue/Deepin-Apps-Installation
+```
+>可以安装QQ、TIM、微信、百度网盘等
 ---
 ## 三、美化
 
 原文链接：[不美翻怎么开发!Ubuntu 16.04 LTS深度美化!(2017年度定稿版)](https://www.jianshu.com/p/4bd2d9b1af41)
-
-### 1、久负盛名的扁平化主题--flatabulous-theme
+> `注意`：要先把桌面系统切换为`gnome`。（先注销然后选择桌面系统再登录）<br>
+> 1.习惯风格：圆形图标+黑色系<br>
+> 2.主体、图标、指针等都可以在`gnome-tweak-tool`中设置
+### 1、Gnome tweak tool
+> 官方教程 https://linux.cn/article-9447-1.html
 ```
-sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get install flatabulous-theme
+sudo apt-get install gnome-tweak-tool
+gnome-shell --version
+gnome-shell --version
+reboot
 ```
 
-### 2、图标
->图标的下载完unity-tweak-tool之后可以在里面直接选，不好看再换下面两个
 1.  圆形图标--icon-theme-circle
 ```
 sudo add-apt-repository ppa:numix/ppa
@@ -108,21 +117,21 @@ sudo add-apt-repository ppa:noobslab/icons
 sudo apt-get update
 sudo apt-get install ultra-flat-icons
 ```
+3. 久负盛名的扁平化主题--flatabulous-theme
+```
+sudo add-apt-repository ppa:noobslab/themes
+sudo apt-get update
+sudo apt-get install flatabulous-theme
+```
 
-### 3、指针和字体
+4. 设置top-bar自动隐藏
 ```
-后续更新，目前觉得没有必要
+安装hide top bar
+扩展即可
 ```
 
-### 4、运用和设置--unity-tweak-tool
-```
-sudo apt-get install unity-tweak-tool
-```
-> 安装完毕之后打开unity进行设置
->> 1、设置launch栏的自动隐藏和图标大小以及透明<br>
-2、设置好`主题`和`图标`<br>
 
-### 5、终端美化,安装oh-my-zsh
+### 2、终端美化,安装oh-my-zsh
 ```
 sudo apt-get install zsh
 sudo apt-get install git
@@ -131,28 +140,12 @@ chsh -s /bin/zsh
 ```
 >右键终端进入 `配置文件-配置文件首选项-颜色` 调整透明度
 
-### 6、dock栏美化--docky
+### 3、dock栏美化--docky
 ```
 sudo apt-get install docky
 ```
 >安装后要启动才能生效，如果要固定其他图标到dock栏，可以打来新窗口然后在dock上右键-固定到dock，或者生成快捷链接到桌面然后拖拽到dock<br>
 docky 带有一些dock栏插件，比如Gmail，天气等
-
-### 7、桌面插件-- conky-manager
-```
-sudo apt install conky-all
-sudo apt-add-repository -y ppa:teejee2008/ppa
-sudo apt update
-sudo apt install conky-manager
-```
->安装这个manager之后，需要进入里面的插件，然后点击编辑文件，<br>
-把 `own_window_type = normal` 改为`own_window_type = desktop`<br>
-不然的话一按显示桌面所有的插件就会消失
-
->移除ppa源可以使用下面命令
->>```
->>sudo apt-get install ppa-purge 
->>sudo ppa-purge ppa:teejee2008/ppa
 
 
 ---
