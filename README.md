@@ -125,10 +125,10 @@ sudo apt-get update
 sudo apt-get install flatabulous-theme
 ```
 
-4. 设置top-bar自动隐藏
+4. 安装必要的扩展（extansion）
 ```
-安装hide top bar
-扩展即可
+1.hide top bar
+2.pixel saver
 ```
 
 
